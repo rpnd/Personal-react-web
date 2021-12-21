@@ -4,9 +4,11 @@ const Product=({img,link})=> {
     return (
         <div className="p">
             <div className="p-browser">
+               
                 <p className="p-circle"></p>
                 <p className="p-circle"></p>
                 <p className="p-circle"></p>
+          
               
 
             </div>

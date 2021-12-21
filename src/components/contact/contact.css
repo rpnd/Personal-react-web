@@ -1,5 +1,5 @@
 .c{
-height: 100vh; 
+height: auto; 
 position: relative;
 
 
@@ -39,8 +39,8 @@ display: flex;
 display: flex;
 align-items: center;
 margin: 50px 30px 20px;
-font-weight: 300;
-width: 70%;
+font-weight: 50;
+width: auto;
 }
 .c-icon{
 width: 30px;
@@ -84,62 +84,85 @@ cursor: pointer;
 
 
 }
-@media screen and (max-width: 480px) {
-    
-    .c-wrapper{
+
+
+
+
+
+    @media screen and (max-width: 480px) {
+        .c-wrapper {
+          flex-direction: column;
+          padding: 0px 50px;
+        }
+      
+        .c-title {
+          font-size: 30px;
+        }
+      
+        .c-info-item {
+          margin: 20px 0px;
+          width: 100%;
+        }
+      
+        .c-desc {
+          display: none;
+        }
+      
+        form {
+          margin-top: 0px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      
+        input {
+          width: 35%;
+          height: 40px;
+          margin: 10px;
+          margin-left: 0;
+        }
+      
+        button {
+          margin-top: 10px;
+        }
+      }
+      
+
+    @media screen and (max-width: 320px) {
+      .c-wrapper {
         flex-direction: column;
-    }
+        padding: 0px 50px;
+      }
+      
     
-    
-    
-    }
-
-
-
-
-
-    @media screen and (max-width:480px) {
-        .c-wrapper{
-            flex-direction: column;
-            padding: 0px 50px;
-        }
-
-    .c-title{
-            font-size: 30px;
-        }
-     .c-info-item{
-            margin: 20px 0px;
-            width: 100%;
-        }
+      .c-title {
+        font-size: 30px;
+      }
      
-        .c-bg{
-            height: 100%;
-        } 
-        .c-desc{
-            
-            display: none;
-            }
-
-
-form{
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-}
-input{
-
-    width: 35%;
-    height: 40px;
-    margin: 10px;
-    margin-left: 0;
-}
-bottom{
-margin-top: 10px;
-
-
-}
-
+    
+      .c-info-item {
+        margin: 20px 0px;
+        width: 100%;
+      }
+    
+      .c-desc {
+        display: none;
+      }
+    
+      form {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+      input {
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+      }
+    
+      button {
+        margin-top: 10px;
+      }
     }
-
-
-
+    

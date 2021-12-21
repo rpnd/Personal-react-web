@@ -1,6 +1,7 @@
 import "./intro.css"
 import Me from "../../img/me.png"
 import svg from "../../img/scrolling.png"
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -26,9 +27,11 @@ const Intro=()=> {
                     flow going at the beginning of the day. The writer has no idea what topic the random paragraph
 
                     </p>
-                 </div>
+                  
+                 </div>  
                <img src={svg} className="i-svg"></img>
               </div>
+              
           <div className="i-right">
 
                 <div className="i-bg"></div>

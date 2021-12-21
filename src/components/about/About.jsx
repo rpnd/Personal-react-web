@@ -1,6 +1,7 @@
 import"./about.css"
 import img from "../../img/img.png" 
 import Award from "../../img/award.png"
+import Roll from 'react-reveal/Roll';
 
 const About=()=> {
     return (
@@ -22,18 +23,18 @@ const About=()=> {
  </p>
  <p className="a-desc">
  It all started with the computer. Had he known what was to follow, he would have never logged on
-  that day. But the truth was there was no way to know what was about to happen. So Dave pressed the start button,
-   the computer booted up, the screen came alive, and everything Dave knew to be true no longer was.
+  that day. , the screen came alive, and everything Dave knew to be true no longer was.
  </p>
  <div className="a-award">
 <img src={Award} alt="" className="a-award-img" />
 
 <div className="a-award-texts">
+    <Roll>
     <h4 className="a-award-title">International Design Award 2021</h4>
     <p className="a-award-desc">
     But the truth was there was no way to know what
      was about to happen. So Dave pressed 
-    </p>
+    </p></Roll>
 </div>
  </div>
  
